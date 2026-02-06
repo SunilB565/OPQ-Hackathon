@@ -1,9 +1,6 @@
 pipeline {
   agent {
-    docker {
-      image 'jenkins-agent:latest'
-      args '--privileged -v /var/run/docker.sock:/var/run/docker.sock'
-    }
+    any
   }
   environment {
     AWS_ACCOUNT_ID = "${env.AWS_ACCOUNT_ID}"
