@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    any
-  }
+  agent any
   environment {
     AWS_ACCOUNT_ID = "${env.AWS_ACCOUNT_ID}"
     AWS_REGION = "${env.AWS_REGION ?: 'us-east-1'}"
